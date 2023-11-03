@@ -38,8 +38,8 @@ available_models = {"ChatGPT-4": "gpt-4","ChatGPT-3.5": "gpt-3.5-turbo","GPT-3":
 if "datasets" not in st.session_state:
     datasets = {}
     # Preload datasets
-    datasets["Movies"] = pd.read_csv("/Users/kali/Documents/GitHub/streamlit_app/SQL_QueryBot/src/pages/q1.csv")
-    datasets["Loandata_finalversion"] = pd.read_csv("/Users/kali/Documents/GitHub/streamlit_app/SQL_QueryBot/src/pages/loandata_finalversion.csv")
+    datasets["Movies"] = pd.read_csv("/Users/kali/Documents/QueryLLM_App/src/pages/q1.csv")
+    datasets["Loandata_finalversion"] = pd.read_csv("/Users/kali/Documents/QueryLLM_App/src/pages/loandata_finalversion.csv")
     st.session_state["datasets"] = datasets
 else:
     # use the list already loaded
